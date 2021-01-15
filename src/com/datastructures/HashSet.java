@@ -43,7 +43,7 @@ public final class HashSet<T> {
     }
 
     public HashSet<T> clone(){
-        HashSet<T> copy = new HashSet<>();
+        HashSet<T> copy = new HashSet<>(initTableSize);
 
         for (int i = 0; i < initTableSize; i++) {
 
