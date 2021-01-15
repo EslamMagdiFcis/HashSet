@@ -34,6 +34,7 @@ public final class HashSet<T> {
 
     public void clear() {
         for (int i = 0; i < initTableSize; i++) {
+            hashTable[i].clear();
             hashTable[i] = null;
         }
 
